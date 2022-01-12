@@ -1,4 +1,6 @@
 body {
   font-family: "Open Sans Condensed";
   padding: 1.5rem 6rem;
+  background: #012326;
+  background: linear-gradient(to right, #49808c 0%, #0d1a26 35%, #8c586b 100%);
 }

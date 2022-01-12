@@ -9,6 +9,7 @@ import {
 import React from "react";
 import HomePage from "./pages/homepages/homepage.component.jsx";
 import ShopPage from "./pages/shop/shop.component.jsx";
+import Header from "./components/header/header.component.jsx";
 import "./App.css";
 
 function NotFound() {
@@ -21,11 +22,14 @@ function NotFound() {
 }
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="*" element={<NotFound />} />
-      <Route path="/shop" element={<ShopPage />} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/shop" element={<ShopPage />} />
+      </Routes>
+    </>
   );
 }
 
