@@ -1,15 +1,9 @@
-import {
-  Routes,
-  Route,
-  Link,
-  // useParams,
-  // useNavigate,
-  // useLocation,
-} from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import React from "react";
-import HomePage from "./pages/homepages/homepage.component.jsx";
-import ShopPage from "./pages/shop/shop.component.jsx";
-import Header from "./components/header/header.component.jsx";
+import HomePage from "./pages/homepages/homepage.component";
+import ShopPage from "./pages/shop/shop.component";
+import Header from "./components/header/header.component";
+import SignIn from "./pages/sign-in/SignIn";
 import "./App.css";
 
 function NotFound() {
@@ -28,6 +22,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/shop" element={<ShopPage />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </>
   );

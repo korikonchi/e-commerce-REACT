@@ -9,6 +9,7 @@ const Header = () => {
       <ButtonLink
         className="nav-icon option "
         to="/"
+        swap
         icon="home"
         label="Home"
       />
@@ -27,19 +28,19 @@ const Header = () => {
           icon="home"
           label="contact"
         />
+        <ButtonLink
+          className="nav-icon option "
+          to="/signin"
+          icon="user"
+          label="sign-in"
+        />
       </nav>
     </div>
   );
 };
 export default Header;
 
-const ButtonLink = ({
-  className = "",
-  icon = "",
-  to,
-  label = "",
-  swap = false,
-}) => {
+const ButtonLink = ({ className, icon, to, label, swap = false }) => {
   const navigate = useNavigate();
 
   const navigateTo = () => {
