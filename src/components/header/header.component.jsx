@@ -11,7 +11,7 @@ const Header = () => {
         to="/"
         swap
         icon="home"
-        label="Home"
+        label=" Home"
       />
 
       <nav className="options">
@@ -19,20 +19,20 @@ const Header = () => {
           className="nav-icon option "
           to="/shop"
           icon="home"
-          label="shop"
+          label=" shop"
         />
 
         <ButtonLink
           className="nav-icon option "
           to="/contact"
           icon="home"
-          label="contact"
+          label=" contact"
         />
         <ButtonLink
           className="nav-icon option "
-          to="/signin"
+          to="/register"
           icon="user"
-          label="sign-in"
+          label=" user"
         />
       </nav>
     </div>

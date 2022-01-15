@@ -3,7 +3,7 @@ import React from "react";
 import HomePage from "./pages/homepages/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import Header from "./components/header/header.component";
-import SignIn from "./pages/sign-in/SignIn";
+import Register from "./pages/register/Register";
 import "./App.css";
 
 function NotFound() {
@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/shop" element={<ShopPage />} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </>
   );
