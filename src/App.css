@@ -4,3 +4,6 @@ body {
   background: #012326;
   background: linear-gradient(to right, #49808c 0%, #0d1a26 35%, #8c586b 100%);
 }
+* {
+  box-sizing: border-box;
+}
